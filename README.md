@@ -19,9 +19,9 @@
 ```java
 
   static{
-		  RpcProvider rpcProvider = null;
-	    rpcProvider = new RpcProviderImpl();
-	    rpcProvider.serviceInterface(RaceTestService.class)
+		RpcProvider rpcProvider = null;
+		rpcProvider = new RpcProviderImpl();
+		rpcProvider.serviceInterface(RaceTestService.class)
 	            .impl(new RaceTestServiceImpl())
 	            .version("1.0.0.api")
 	            .timeout(3000)
